@@ -1,13 +1,32 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.curve-btn {
+  background-color: #EEEBD3;
+  color: #255957;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0 10px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #255957;
+  box-shadow: 0 0 0 0 #255957;
 }
+
+.curve-btn:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #255957;
+};
+
+.curve-btn:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 #255957;
+};
