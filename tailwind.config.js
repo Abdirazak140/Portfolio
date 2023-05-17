@@ -13,6 +13,10 @@ module.exports = {
       'ecru': '#E2DCB6'
     },
     extend: {
+      zIndex: {
+        '-1': '-1',
+        '-10': '-10',
+      },
       borderRadius: {
         '160': '160px'
       },

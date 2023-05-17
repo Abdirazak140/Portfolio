@@ -1,3 +1,4 @@
+import Hexa from "./components/Hexa";
 import Navbar from "./components/navbar";
 import About from "./sections/about";
 import Contact from "./sections/contact";
@@ -7,6 +8,9 @@ import Projects from "./sections/projects";
 function App() {
   return (
     <div>
+      <div className="absolute z--1">
+        <Hexa/>
+      </div>
       <Navbar/>
       <Home/>
       <About/>
