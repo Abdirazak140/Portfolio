@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
-function AnimateRight({ className, children }: any) {
+function Pop({ className, children, duration }: any) {
     const controls = useAnimation();
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -16,16 +16,12 @@ function AnimateRight({ className, children }: any) {
 
     return (
         <motion.div ref={ref} className={className}
-            initial='hidden'
-            animate={controls}
-            variants={{
-                hidden: { x: 1000 },
-                visible: { x: 0, transition: { duration: 1 } }
-            }}
-        >
+            animate={{ x: 200}}
+            transition={{ type: "spring", stiffness: 200, duration: {duration} }}
+            >
             {children}
         </motion.div>
     )
 }
 
-export default AnimateRight;
+export default Pop;

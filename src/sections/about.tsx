@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import me from "../assets/placeholder.webp"
+import me from "../assets/IMG-3345.jpg"
 import { FaGitAlt, FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
 import Skill from "../components/skills";
 import { SiCss3, SiElectron, SiFirebase, SiGnubash, SiJavascript, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
@@ -13,16 +13,20 @@ function About(){
             <div className="z-10 relative mt-20">
                 <h1 className="text-ceru font-bold text-4xl">About Me.</h1>
                 <div className="flex flex-row mt-5 space space-x-10">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
-                        Dolorem atque, ex, qui debitis quas, excepturi pariatur<br/>
-                        quidem dolore quos ea culpa earum iusto corrupti? Maxime<br/>
-                        sequi perferendis temporibus est ipsam. Lorem ipsum dolor<br/>
-                        sit amet consectetur, adipisicing elit. Impedit deserunt<br/>
-                        repellat itaque adipisci soluta doloremque rerum quod maiores<br/>
-                        quis laborum, doloribus tempora rem illo? Tempore impedit<br/>
-                        quibusdam eligendi fugiat neque!
-                    </p>
+                    <div className="flex flex-col">
+                        <p className="text-dsg">
+                        I am currently part of the Robotics Team at York University,<br/>
+                        where I am expanding my skills in React and learning ROS2.<br/> 
+                        The most significant skill I've gained from this experience is<br/> 
+                        teamwork. This has provided me with the opportunity to contribute<br/> 
+                        to a project as a part of a team, a valuable experience that is<br/> 
+                        unfamiliar to me.<br/>
+                        </p>
+                        <p className="text-dsg mt-4">
+                        I'm seeking a co-op role where I can leverage my skills,<br/>
+                        learn from experts, and contribute to a team.
+                        </p>
+                    </div>
                     <div className="relative image-container">
                         <img src={me} className="me-img" alt="Description"></img>
                         <div className="color-overlay"></div>

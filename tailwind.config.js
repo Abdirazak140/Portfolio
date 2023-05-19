@@ -24,7 +24,9 @@ module.exports = {
         'hs': '650px',
         'hc': '400px',
         'ha': '1200px',
-        'hp': '1300px'
+        'hp': '1300px',
+        'project-img': '450px',
+        'project': '450px'
       }
     },
   },

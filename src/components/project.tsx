@@ -3,15 +3,15 @@ import { BsCodeSlash, BsLink } from "react-icons/bs";
 
 function Project({ imgSrc, projectName, toolsUsed, description, githubLink, demoLink}: any){
   return (
-    <div className="flex flex-col p-4 bg-white shadow-lg w-96 m-4">
+    <div className="flex flex-col p-4 bg-white shadow-lg w-project m-4">
         <div className="flex justify-center">
                 <img
                 src={imgSrc}
                 alt={projectName}
-                className="w-80 h-64 object-cover"
+                className="w-project-img object-cover"
                 />
         </div>
-        <div className="mt-4 flex flex-col justify-between">
+        <div className="mt-4 flex flex-col justify-between h-1/2">
             <h5 className="font-semibold text-lg text-dsg">
                 {projectName} 
                 <span className="text-sm pl-2 text-golden">

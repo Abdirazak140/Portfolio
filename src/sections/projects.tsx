@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import Project from "../components/project";
 import bruh from "../assets/placeholder.webp"
+import Bracket from "../assets/sportProject.png"
 
 function Projects(){
     return(
@@ -9,11 +10,12 @@ function Projects(){
                 <h1 className="text-ceru font-bold text-4xl text-center">Featured Projects.</h1>
                 <div className="flex flex-wrap mt-4 space space-x-10 justify-center">
                     <Project 
-                    imgSrc={bruh} 
+                    imgSrc={Bracket} 
                     projectName="SportsBracketHub"
                     toolsUsed="React, Typescript, Tailwind, Firebase"
                     description="A web application for making predictions 
-                    on NBA sports brackets. The app provides live match outcomes, 
+                    on sports brackets (currently it only has NBA Playoffs available). 
+                    The app provides live match outcomes, 
                     prediction verifications, and user authentication for saving 
                     predictions and tracking progress over time."
                     githubLink="https://github.com/Abdirazak140/SportsBracketHub"
@@ -45,7 +47,7 @@ function Projects(){
                     imgSrc={bruh} 
                     projectName="Door Alarm"
                     toolsUsed="Java, Firmata, JUnit"
-                    description="Door Alarm - Java, Firmata, JUnit
+                    description="
                     An door alarm system developed using Arduino and an ultrasonic sensor. 
                     The alarm triggers when a door is opened at configured times."
                     />
