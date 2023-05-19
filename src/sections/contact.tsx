@@ -13,9 +13,15 @@ function Contact(){
                 </div>
                 <div className="flex justify-center text-5xl space-x-6 mt-10">
                 <IconContext.Provider value={{ className: "contactIcon" }}>
-                    <FiGithub  className="cursor-pointer"/>
-                    <FiLinkedin className="cursor-pointer"/>
-                    <FiInstagram className="cursor-pointer"/>
+                    <a href="https://github.com/Abdirazak140" target="_blank" rel="noopener noreferrer">
+                        <FiGithub className="cursor-pointer"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdirazak-yusuf-a72163230/" target="_blank" rel="noopener noreferrer">
+                        <FiLinkedin className="cursor-pointer"/>
+                    </a>
+                    <a href="https://instagram.com/yabdirazak" target="_blank" rel="noopener noreferrer">
+                        <FiInstagram className="cursor-pointer"/>
+                    </a>
                 </IconContext.Provider>
                 </div>
             </div>

@@ -21,8 +21,10 @@ module.exports = {
         '160': '160px'
       },
       spacing: {
-        'hs': '760px',
-        'hc': '400px'
+        'hs': '650px',
+        'hc': '400px',
+        'ha': '1200px',
+        'hp': '1300px'
       }
     },
   },

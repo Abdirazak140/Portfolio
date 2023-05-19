@@ -37,7 +37,9 @@ function Navbar(){
                     Contact
                 </Link>
                 </ul>
-                <button className="mr-20 mt-1 curve-btn h-10 px-2.5">Resume</button>
+                <a href="" target="_blank" className="mr-20 mt-1 curve-btn h-10 px-2.5 flex items-center">
+                    Resume
+                </a>
             </div>
         </nav>
     )
