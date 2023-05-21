@@ -12,7 +12,7 @@ function Projects(){
                     <Project 
                     imgSrc={Bracket} 
                     projectName="SportsBracketHub"
-                    toolsUsed="React, Typescript, Tailwind, Firebase"
+                    toolsUsed="React, Typescript, Tailwind, Firebase, Node.js"
                     description="A web application for making predictions 
                     on sports brackets (currently it only has NBA Playoffs available). 
                     The app provides live match outcomes, 
@@ -23,7 +23,7 @@ function Projects(){
                     <Project 
                     imgSrc={bruh} 
                     projectName="PriveCall"
-                    toolsUsed="Embedded JavaScript, CSS, HTML"
+                    toolsUsed="JavaScript, CSS, HTML, Node.js"
                     description="An anonymous, secure, easy to use, video 
                     calling platform that requires no sign-ups and provides 
                     immediate connections for its users."

@@ -1,9 +1,10 @@
 import { IconContext } from "react-icons";
 import { BsCodeSlash, BsLink } from "react-icons/bs";
+import Slant from "./tilt";
 
 function Project({ imgSrc, projectName, toolsUsed, description, githubLink, demoLink}: any){
   return (
-    <div className="flex flex-col p-4 bg-white shadow-lg w-project m-4">
+    <Slant className="flex flex-col p-4 bg-white shadow-lg w-project m-4">
         <div className="flex justify-center">
                 <img
                 src={imgSrc}
@@ -38,7 +39,7 @@ function Project({ imgSrc, projectName, toolsUsed, description, githubLink, demo
                 </a>}
             </div>
         </div>
-    </div>
+    </Slant>
   )
 }
 
