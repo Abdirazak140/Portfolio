@@ -2,10 +2,11 @@ import { Element } from "react-scroll";
 import me from "../assets/IMG-3345.jpg"
 import { FaGitAlt, FaHtml5, FaJava, FaPython, FaReact } from "react-icons/fa";
 import Skill from "../components/skills";
-import { SiCss3, SiElectron, SiFirebase, SiGnubash, SiJavascript, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiCss3, SiElectron, SiFirebase, SiGnubash, SiJavascript, SiMysql, SiTailwindcss, SiTypescript, SiC } from "react-icons/si";
 import { TbLetterC } from "react-icons/tb";
 import AnimateLeft from "../components/motion_left";
 import AnimateRight from "../components/motion_right";
+import { DiNodejs } from "react-icons/di";
 
 function About(){
     return(
@@ -39,7 +40,7 @@ function About(){
                         <AnimateLeft className="flex flex-wrap justify-center items-center space-x-2">
                             <Skill name="Python" icon={<FaPython/>}/>
                             <Skill name="Java" icon={<FaJava/>}/>
-                            <Skill name="C" icon={<TbLetterC/>}/>
+                            <Skill name="C" icon={<SiC/>}/>
                             <Skill name="JavaScript" icon={<SiJavascript/>}/>
                             <Skill name="TypeScript" icon={<SiTypescript/>}/>
                             <Skill name="HTML" icon={<FaHtml5/>}/>
@@ -51,6 +52,7 @@ function About(){
                             <Skill name="Tailwind " icon={<SiTailwindcss/>}/>
                             <Skill name="React" icon={<FaReact/>}/>
                             <Skill name="Electron" icon={<SiElectron/>}/>
+                            <Skill name="Node.js" icon={<DiNodejs/>}/>
                         </AnimateRight>
                         <h2 className="text-dsg font-bold text-2xl mt-6 text-center mb-3">Tools:</h2>
                         <AnimateLeft className="flex flex-wrap justify-center items-center space-x-2">
