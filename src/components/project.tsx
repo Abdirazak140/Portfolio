@@ -9,7 +9,7 @@ function Project({ imgSrc, projectName, toolsUsed, description, githubLink, demo
                 <img
                 src={imgSrc}
                 alt={projectName}
-                className="w-project-img object-cover"
+                className="h-project-img w-auto object-cover"
                 />
         </div>
         <div className="mt-4 flex flex-col justify-between h-1/2">

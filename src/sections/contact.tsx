@@ -1,11 +1,12 @@
 import { Element } from "react-scroll";
 import { FiGithub, FiLinkedin, FiInstagram} from "react-icons/fi";
 import { IconContext } from "react-icons";
+import Vanish from "../components/vanish";
 
 function Contact(){
     return(
         <Element name="contact" className="bg-eggshell w-full h-hc pt-8 flex flex-col items-center">
-            <div className="z-10 relative">
+            <Vanish duration={.5} className="z-10 relative">
                 <h1 className="text-ceru font-bold text-4xl top-4 text-center">Contact.</h1>
                 <h2 className="text-center text-dsg font-medium text-2xl mt-8">Please remember that you're always welcome to contact me!</h2>
                 <div className="flex justify-center mt-5">
@@ -24,7 +25,7 @@ function Contact(){
                     </a>
                 </IconContext.Provider>
                 </div>
-            </div>
+            </Vanish>
         </Element>  
 
     )
