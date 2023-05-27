@@ -6,7 +6,7 @@ import Vanish from "./vanish";
 
 function Navbar(){
     const [navBg, setNavBg] = useState(false);
-    const resumeUrl = "https://drive.google.com/file/d/1fGbS9Ik90PabHyXfTKhlOdoV1F8Hihha/view?usp=sharing";
+    const resumeUrl = "https://drive.google.com/file/d/1v7c5zCbboviQP3B3jKR3rIZwoFn5jIad/view?usp=sharing";
     
     function changeNavBackground(){
         if (window.scrollY > 70){
