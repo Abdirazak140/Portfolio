@@ -12,7 +12,7 @@ function Projects(){
         <Element name="projects" className="bg-eggshell w-full flex justify-center">
             <div className="z-10 relative mt-11">
                 <h1 className="text-ceru font-bold text-4xl text-center">Featured Projects.</h1>
-                <Vanish duration={.5} className="flex flex-wrap mt-4 space space-x-10 justify-center">
+                <Vanish duration={.5} className="flex flex-wrap mt-4 space sm:space-x-10 justify-center">
                     <Project 
                         imgSrc={Bracket} 
                         projectName="NBABracketHub"

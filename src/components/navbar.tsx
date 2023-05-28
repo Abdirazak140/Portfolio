@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
 import { TbCircleLetterA } from "react-icons/tb";
 import { Link } from 'react-scroll'
@@ -6,6 +6,7 @@ import Vanish from "./vanish";
 
 function Navbar(){
     const [navBg, setNavBg] = useState(false);
+    // const [navMenu, setNavMenu] = useState(false);
     const resumeUrl = "https://drive.google.com/file/d/1v7c5zCbboviQP3B3jKR3rIZwoFn5jIad/view?usp=sharing";
     
     function changeNavBackground(){
@@ -17,12 +18,20 @@ function Navbar(){
         }
     }
 
-    window.addEventListener("scroll", changeNavBackground);
+    // useEffect(() => {
+    //     if (window.innerWidth < 640){
+    //         setNavMenu(true);
+    //     }
+    //     else{
+    //         setNavMenu(false);
+    //     }
+    // }, [window.innerWidth])
 
+    window.addEventListener("scroll", changeNavBackground);
 
     return(
         <nav className={`w-full h-20 z-50 flex flex-row justify-between pt-5 fixed transition ease-in-out duration-500 ${navBg ? "bg-ecru" : "bg-eggshell}"}`}>
-            <div className="ml-20">
+            <div className="ml-4 sm:ml-20">
                 <IconContext.Provider value={{ color: "437c90", size: "40px" }}>
                     <TbCircleLetterA/>
                 </IconContext.Provider>

@@ -4,13 +4,13 @@ import Slant from "./tilt";
 
 function Project({ imgSrc, projectName, toolsUsed, description, githubLink, demoLink}: any){
   return (
-    <Slant className="flex flex-col p-4 bg-white shadow-lg w-project m-4">
+    <Slant className="flex flex-col p-4 bg-white shadow-lg w-project-mobile sm:w-project sm:m-4">
         <div className="flex justify-center">
-                <img
-                src={imgSrc}
-                alt={projectName}
-                className="h-project-img w-auto object-cover"
-                />
+            <img
+            src={imgSrc}
+            alt={projectName}
+            className="h-project-img-mobile w-auto object-cover"
+            />
         </div>
         <div className="mt-4 flex flex-col justify-between h-1/2">
             <h5 className="font-semibold text-lg text-dsg">

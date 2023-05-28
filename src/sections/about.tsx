@@ -8,25 +8,19 @@ import Vanish from "../components/vanish";
 
 function About(){
     return(
-        <Element name="about" className="bg-eggshell w-full h-ha flex justify-center">
+        <Element name="about" className="bg-eggshell w-full flex justify-center">
             <div className="z-10 relative mt-20">
-                <h1 className="text-ceru font-bold text-4xl">About Me.</h1>
-                <Vanish duration={1} className="flex flex-row mt-5 space space-x-10">
-                    <div className="flex flex-col">
-                        <p className="text-dsg">
-                        I am currently part of the Robotics Team at York University,<br/>
-                        where I am expanding my skills in React and learning ROS2.<br/> 
-                        The most significant skill I've gained from this experience is<br/> 
-                        teamwork. This has provided me with the opportunity to contribute<br/> 
-                        to a project as a part of a team, a valuable experience that is<br/> 
-                        unfamiliar to me.<br/>
+                <h1 className="text-ceru font-bold text-4xl text-center">About Me.</h1>
+                <Vanish duration={1} className="flex flex-col sm:flex-row items-start justify-center mt-5 space-y-4 sm:space-y-0 sm:space-x-10">
+                    <div className="flex flex-col mb-3 text-center sm:text-left w-96">
+                        <p className="text-dsg text-sm sm:text-base">
+                            I am currently part of the Robotics Team at York University, where I am expanding my skills in React and learning ROS2. The most significant skill I've gained from this experience is teamwork. This has provided me with the opportunity to contribute to a project as a part of a team, a valuable experience that is unfamiliar to me.
                         </p>
-                        <p className="text-dsg mt-4">
-                        I'm seeking a co-op role where I can leverage my skills,<br/>
-                        learn from experts, and contribute to a team.
+                        <p className="text-dsg mt-4 text-sm sm:text-base">
+                            I'm seeking a co-op role where I can leverage my skills, learn from experts, and contribute to a team.
                         </p>
                     </div>
-                    <div className="relative image-container">
+                    <div className="relative image-container ml-10">
                         <img src={me} className="me-img" alt="Description"></img>
                         <div className="color-overlay"></div>
                     </div>

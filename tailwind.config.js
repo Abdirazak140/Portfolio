@@ -26,7 +26,9 @@ module.exports = {
         'ha': '1200px',
         'hp': '1300px',
         'project-img': '270px',
-        'project': '450px'
+        'project': '450px',
+        'project-mobile': '400px',
+        'project-img-mobile': '220px',
       }
     },
   },
